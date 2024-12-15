@@ -58,16 +58,16 @@ html,body{
 .name{
     font-size: 18px;
     font-weight: 600;
+    margin-left: 5px;
     
 }
 /* +++++++++++++++++++++++++++++Section 2 ++++++++++++++++++++++++++++ */
 .sec_2{
     width: 100%;
-    height: 50vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
+    padding: 20px 50px;
     margin-bottom: 20px;
     
 }
@@ -155,7 +155,7 @@ html,body{
     justify-content: center;
 }
 .box{
-    width: 25%;
+    width: 30%;
     padding: 20px;
     border: 1px solid black;
     border-radius: 5px;
@@ -191,7 +191,7 @@ html,body{
 }
 .para6{
     width: 500px;
-    font-size: 38px;
+    font-size: 26px;
     font-weight: bold;
 }
 .input{
@@ -200,7 +200,7 @@ html,body{
     padding: 5px;
     /* background-color: #1b1a77; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border: 2px solid black;
 }
@@ -236,19 +236,20 @@ html,body{
     padding: 0px 20px;
 }
 .lines{
-    width: 500px;
+    width: 400px;
     margin-bottom: 40px;
 }
 .lists{
     width: 300px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 li{
     list-style: none;
 }
 .para7{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .end{
     color: #858585;
@@ -258,7 +259,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .list-icon{
     display: flex;
@@ -279,6 +280,19 @@ li{
 .menu h3,.resouce h3{
     margin-bottom: 5px;
 }
+.sign,.btn2,.btn3{
+    transition: .5s all;
+}
+.sign:hover,.btn2:hover,.btn3:hover{
+    color: black;
+    background-color: #ffffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.icons i:hover{
+    cursor: pointer;
+}
+/* ++++++++++++++++++++++++ Responsive++++++++++++++++++++ */
 @media (max-width: 600px) {
     /* +++++++sec nav */
     .links{
@@ -297,6 +311,7 @@ li{
     }
     .btn3{
         width: 100%;
+        padding: 13px 18px;
     }
     .img img{
         width: 200px;
@@ -373,9 +388,10 @@ li{
     }
     /* ++++++ sec 6 */
     .sec_6{
-        padding: 0px 10px;
+        padding: 0px;
         flex-direction: column;
         margin-bottom: 20px;
+        
         
     }
     .para6{
@@ -389,10 +405,10 @@ li{
         height: 50px;
     }
     .input input{
-        width: 200px;
+        width: 190px;
     }
     .btn2{
-        padding: 12px 18px;
+        padding: 8px 12px;
     }
     /* ++++++ sec 7 */
     .sec_7{
